@@ -1,0 +1,9 @@
+(library
+ (name lib)
+ (modules type parser ast solver matrix utils)
+ (libraries z3 sexplib containers zarith))
+
+
+
+(env (dev
+	(flags (:standard -warn-error -A))))
